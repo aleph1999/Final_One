@@ -63,6 +63,23 @@ public abstract class Page {
         panel.add(list);
     }
 
+    public void addList3(JFrame frame, JPanel panel, JList list, int x, int y){
+        panel.setLayout(null);
+        list.setBounds(x,y,1300,150);
+        panel.add(list);
+    }
+    public void addList30(JFrame frame, JPanel panel, JList list, int x, int y){
+        panel.setLayout(null);
+        list.setBounds(x,y,1300,100);
+        panel.add(list);
+    }
+
+    public void addList40(JFrame frame, JPanel panel, JList list, int x, int y){
+        panel.setLayout(null);
+        list.setBounds(x,y,1300,220);
+        panel.add(list);
+    }
+
     public void customizeFrame(JFrame frame, int width, int height, JPanel panel) {
         // Setup window
         setup(width,height,frame,panel);

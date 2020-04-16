@@ -8,6 +8,7 @@ public class LinguisticExploration extends Page {
     JButton back = new JButton("Back");
     JButton lesson1 = new JButton("Lesson 1: General Arabic Grammar");
     JButton lesson2 = new JButton("Lesson 2: Sentence Breakdown");
+    JButton lesson3 = new JButton("Lesson 3: Word order of bedouin Arabic");
 
 
     public LinguisticExploration(){
@@ -34,11 +35,16 @@ public class LinguisticExploration extends Page {
         return lesson2;
     }
 
+    public JButton getLesson3() {
+        return lesson3;
+    }
+
     public void linguisticExploration(){
         customizeFrame(linguistic_frame,820,685, linguistic_panel);
 
         addButton(linguistic_frame, lesson1,linguistic_panel,200,250,500,100);
         addButton(linguistic_frame,lesson2,linguistic_panel,200,350,500,100);
+        addButton(linguistic_frame,lesson3,linguistic_panel,200,450,500,100);
         addButton(linguistic_frame,back,linguistic_panel, 0,0,50,50);
 
 

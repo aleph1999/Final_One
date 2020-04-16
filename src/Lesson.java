@@ -154,6 +154,40 @@ public class Lesson extends Page {
             "3rd person masculine pronoun "};
 
 
+    // LESSON 3
+    static String start[] = {"TYPES OF SENTENCES / WORD ORDER",
+            "In bedouin arabic, there are two main types of sentences; nominal and verbal",
+    "The former is that the sentence which effectively begins with a noun, and the latter is what effectively begins with a verb",
+            " -if sentence starts with: noun, pronoun, adjective, adverb =  {nominal}",
+            " -if sentence starts with: verb = {verbal sentence} "};
+
+    static String explanations[] = {"EXAMPLE 1",
+   "اشم(V)          هاظ (O)",
+        "Pronoun: this      Verb: how much",
+        "VERBAL SENTENCE {VO}",
+            "EXAMPLE 2",
+            "انا                        بتحسس                       من",
+        "independent prepositional noun            verb('to have an allergic reaction'        1st person pronoun (I)",
+    "NOMINAL SENTENCE {SV"};
+
+    static String note[] = {"Another more in-depth way to look at word order is through agreement assymetry:",
+        "if all words in a sentence match on person-point-of-view, number, and gender with the subject; makes it a SVO/SV word order",
+        "(vise versa is true; if they don't agree symmetrically then it is most probably VSO/VO word order"};
+
+    static String nextExplanation[] = {"Look at the following detailed explanation:",
+        "EXAMPLE 1",
+        "المعلمون  قرؤو الكتاب",
+        "al-muallimuna qara'u il-kitab",
+        "The teachers-M.PL.NOM   read.Post-3.M. PL     the-book-ACC",
+        "the (male) teachers read the book",
+        "full agreement : SVO order : nominal sentence",
+    "EXAMPLE 2",
+    "قرا المعلمون الكتاب",
+    "read.Post-3M.SG    the-teacher-M.PL.NOM     the-book-ACC",
+    "the (male) teachers read the book",
+    "partial agreement: VSO Order: verbal sentence"};
+
+
 
     static JList phrase1_jList = new JList(phrase_1);
     static JList phrase2_jList = new JList(phrase_2);
@@ -166,6 +200,11 @@ public class Lesson extends Page {
     static JList phrase7_jList = new JList(phrase_7);
     static JList phrase8_jList = new JList(phrase_8);
     static JList phrase9_jList = new JList(phrase_9);
+
+    static JList start_jList = new JList(start);
+    static JList explanations_jList = new JList(explanations);
+    static JList note_jList = new JList(note);
+    static JList nextExplanation_jList = new JList(nextExplanation);
 
 
 
@@ -181,6 +220,8 @@ public class Lesson extends Page {
     public JButton getBack() {
         return back;
     }
+
+
 
 
     public void lesson1(){
@@ -218,6 +259,21 @@ public class Lesson extends Page {
         addList(lesson_frame,lesson_panel, phrase7_jList, 050, 550);
         addList(lesson_frame,lesson_panel, phrase8_jList, 450, 550);
         addList(lesson_frame,lesson_panel, phrase9_jList, 850, 550);
+
+
+    }
+
+
+    public void lesson3(){
+        customizeFrame(lesson_frame,1300,685, lesson_panel);
+        addButton(lesson_frame,back,lesson_panel, 0,0,50,50);
+
+        addList3(lesson_frame,lesson_panel,start_jList,00, 50);
+        addList3(lesson_frame,lesson_panel,explanations_jList,00, 200);
+        addList30(lesson_frame,lesson_panel,note_jList,00, 350);
+        addList40(lesson_frame,lesson_panel,nextExplanation_jList,00, 450);
+
+
 
 
     }

@@ -23,6 +23,7 @@ public class WelcomePage extends Page implements ActionListener {
 
     private static final Lesson lesson_frame_1 = new Lesson();
     private static final Lesson lesson_frame_2 = new Lesson();
+    private static final Lesson lesson_frame_3 = new Lesson();
 
 
 
@@ -104,6 +105,8 @@ public class WelcomePage extends Page implements ActionListener {
 
                         lesson2_pressed();
 
+                        lesson3_pressed();
+
                     }
                 });
 
@@ -143,6 +146,21 @@ public class WelcomePage extends Page implements ActionListener {
                 frameSwitcher(linguistic_frame.getLinguistic_frame(), lesson_frame_2.getLesson_frame());
 
                 backButton(lesson_frame_2.getBack(), lesson_frame_2.getLesson_frame(), linguistic_frame.getLinguistic_frame());
+
+
+            }
+        });
+    }
+
+    private void lesson3_pressed() {
+        linguistic_frame.getLesson3().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                lesson_frame_3.lesson3();
+
+                frameSwitcher(linguistic_frame.getLinguistic_frame(), lesson_frame_3.getLesson_frame());
+
+                backButton(lesson_frame_3.getBack(), lesson_frame_3.getLesson_frame(), linguistic_frame.getLinguistic_frame());
 
 
             }
