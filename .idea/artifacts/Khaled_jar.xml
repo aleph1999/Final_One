@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Khaled:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Khaled_jar</output-path>
+    <root id="archive" name="Khaled.jar">
+      <element id="module-output" name="Khaled" />
+    </root>
+  </artifact>
+</component>
